@@ -73,7 +73,7 @@ class Crm
     p 'Enter ID:'
     user_id = gets.chomp.to_i
     p contact = Contact.find(user_id)
-    p contact.delete(user_id)
+    p contact.delete
   end
 
   def display_all_contacts

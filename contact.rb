@@ -108,7 +108,7 @@ class Contact
        return contact
      elsif contact.email == value
        return contact
-     elsif contact.id == value
+     elsif contact.note == value
        return contact
       end
     end
@@ -126,8 +126,8 @@ class Contact
 
   # This method should delete the contact
   # HINT: Check the Array class docs for built-in methods that might be useful here
-  def delete(id_del)
-    @@list.delete(id_del)
+  def delete
+    @@list.delete(self)
   end
 
   #add to list
