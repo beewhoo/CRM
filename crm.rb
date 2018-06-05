@@ -92,9 +92,6 @@ class Crm
 
 end
 
-
-
-user = Crm.new
-user.main_menu
-
-p Crm.all
+at_exit do
+  ActiveRecord::Base.connection.close
+end
